@@ -5,18 +5,16 @@ import '../App.css';
 class Skills extends React.Component {
 
     render() {
-        console.log(typeof this.props.skills.webDevelopement)
-        console.log(Object.keys(this.props.skills))
         return (
             <>
                 <section id="skills">
-                    <div className="row features-small mt-5 wow fadeIn">
-                        <div className="col-12" >
-                            <table width="100%" className="system-screen">
+                    <div className="row  mt-5 wow fadeIn">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+                            <table width="100%">
                                 <tbody>
-                                    <tr align="center">
+                                    <tr align="center" className="row">
                                         {Object.keys(this.props.skills).map((key, i) =>
-                                            <td><button type="button" className="btn elegant-color" data-toggle="modal" data-target={['#modal' + i]} style={{ width: "200px" }}>{key}</button></td>
+                                            <td key={i} className="col-lg-3 col-md-6 col-sm-12 col-xs-12"><button type="button" className="btn elegant-color" data-toggle="modal" data-target={['#modal' + i]} style={{ width: "80%" }}>{key}</button></td>
                                         )
                                         }
                                     </tr>
@@ -27,7 +25,7 @@ class Skills extends React.Component {
                 </section>
                 {Object.keys(this.props.skills).map((key, j) => {
                     return (
-                        <div className="modal fade" id={['modal' + j]} tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div key={j} className="modal fade" id={['modal' + j]} tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div className="modal-dialog cascading-modal" role="document">
                                 <div className="modal-content">
                                     <div className="modal-header elegant-color darken-3 white-text">
@@ -41,7 +39,7 @@ class Skills extends React.Component {
                                                     {this.props.skills[key].map(
                                                         (p, i) => {
                                                             return (
-                                                                <td className="col-4">
+                                                                <td key={i} className="col-4 ">
                                                                     <img src={['/image/' + p +'.jpg']} style={{ width: "70px", height: "70px" }} alt="java" /><br />
                                                                     <h5 className="feature-title font-bold mb-1">{p}</h5>
                                                                 </td>

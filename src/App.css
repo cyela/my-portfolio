@@ -42,7 +42,7 @@
   color: white;
 }
 .top-heading {
-  font-family: "Shadows Into Light", cursive;
+  font-family: "Ubuntu", sans-serif;
   color: white;
 }
 .aboutme {
@@ -223,11 +223,7 @@ body {
     height: 200px;
   }
 }
-@media screen and (max-width: 550px) {
-  .tablet-edu {
-    height: 330px;
-  }
-}
+
 @media screen and (max-width: 770px) {
   .tablet-card {
     height: 220px;
@@ -241,6 +237,7 @@ body {
   }
   .tablet-h1 {
     font-size: 2em;
+    padding-top: 10%;
   }
   .tablet-h2 {
     font-size: 1em;

@@ -25,7 +25,7 @@ class Academic extends React.Component  {
                                                                     <h5 className="card-text school-para" style={{fontStyle: "italic"}}>{edu.concentration}</h5>
                                                                     <p className="card-text school-para" style={{fontStyle: "italic"}}>({edu.graduatedYear})</p>
                                                                 </div>
-                                                                <div className="col-lg-4 col-md-3  d-xs-none d-xxs-none insertpo justify-content-center" 
+                                                                <div className="col-lg-4 col-md-3 " 
                                                                     style={
                                                                         {backgroundImage: `url(${edu.image})`,
                                                                         backgroundSize: "contain",

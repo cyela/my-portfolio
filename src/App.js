@@ -61,7 +61,7 @@ class App extends React.Component {
         <footer className="page-footer text-center font-small mt-4 wow fadeIn" id="contact">
             <hr className="my-4" />
             <h2 className="my-5 h3 text-center w3-text-white" >Contact Me</h2>
-          <Contact contact={this.state.profile} loading={this.state.loading} />
+          <Contact profile={this.state.profile} loading={this.state.loading} />
         </footer>
       </>
     );
