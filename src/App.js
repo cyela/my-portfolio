@@ -10,58 +10,96 @@ import Skills from './components/Skills';
 
 class App extends React.Component {
 
-  state = {
-    profile: {},
-    education: [],
-    employement: [],
-    projects: [],
-    skills: {},
-    loading: false
+  constructor() {
+    super();
+    this.handleScrollTo = this.handleScrollTo.bind(this)
+    this.myProfileToFocus = React.createRef()
+    this.myAcademicToFocus = React.createRef()
+    this.myEmployementToFocus = React.createRef()
+    this.mySkillToFocus = React.createRef()
+    this.myProjectToFocus = React.createRef()
+    this.myContactToFocus = React.createRef()
   }
 
-  componentDidMount() {
-    this.setState({ loading: true });
-    fetch('./data.json')
-      .then(data => data.json())
-      .then(data =>
-        this.setState(
-          {
-            profile: data[0],
-            education: data[1].education,
-            employement: data[2].employement,
-            projects: data[3].projects,
-            skills: data[4].skills,
-            loading: false
-          })
-      );
-  }
+  handleScrollTo(refElement) {
+    const scrollProps = {
+      behavior: "smooth",
+      block: "start"
+    }
+    switch (refElement) {
+      case 'Profile':
+        if (this.myProfileToFocus.current) {
+          this.myProfileToFocus.current.scrollIntoView(scrollProps)
+        }
+        break
+      case 'Academic':
+        if (this.myAcademicToFocus.current) {
+          this.myAcademicToFocus.current.scrollIntoView(scrollProps)
+        }
+        break
+      case 'Skill':
+        if (this.mySkillToFocus.current) {
+          this.mySkillToFocus.current.scrollIntoView(scrollProps)
+        }
+        break
+      case 'Employement':
+        if (this.myEmployementToFocus.current) {
+          this.myEmployementToFocus.current.scrollIntoView(scrollProps)
+        }
+        break
+      case 'Project':
+        if (this.myProjectToFocus.current) {
+          this.myProjectToFocus.current.scrollIntoView(scrollProps)
+        }
+        break
+      case 'Contact':
+        if (this.myContactToFocus.current) {
+          this.myContactToFocus.current.scrollIntoView(scrollProps)
+        }
+        break
+      default:
+        if (this.myProfileToFocus.current) {
+          this.myProfileToFocus.current.scrollIntoView(scrollProps)
+        }
+    }
 
+  }
   render() {
 
     return (
       <>
-        <Menu url={this.state.profile.url} />
-        <Profile profile={this.state.profile} loading={this.state.loading} />
+        <Menu onScrollSelect={this.handleScrollTo} />
+        <div ref={this.myProfileToFocus}>
+          <Profile onScrollSelect={this.handleScrollTo}/>
+        </div>
         <main>
           <div className="container">
-            <hr className="my-5" />
-            <h2 className="my-5 h3 text-center">Academics</h2>
-            <Academic education={this.state.education} loading={this.state.loading} />
-            <hr className="my-5" />
-            <h2 className="my-5 h3 text-center">Skills</h2>
-            <Skills skills={this.state.skills} loading={this.state.loading}/> 
-            <hr className="my-5" />
-            <h2 className="my-5 h3 text-center">Experience</h2>
-            <Employement employement={this.state.employement} loading={this.state.loading} />
-            <hr className="my-5" />
-            <h2 className="my-5 h3 text-center">Projects</h2>
-            <Project project={this.state.projects} loading={this.state.loading} />
+            <div ref={this.myAcademicToFocus}>
+              <hr className="my-5" />
+              <h2 className="my-5 h3 text-center">Academics</h2>
+              <Academic />
+            </div>
+            <div ref={this.mySkillToFocus}>
+              <hr className="my-5" />
+              <h2 className="my-5 h3 text-center">Skills</h2>
+              <Skills />
+            </div>
+            <div ref={this.myEmployementToFocus}>
+              <hr className="my-5" />
+              <h2 className="my-5 h3 text-center">Experience</h2>
+              <Employement />
+            </div>
+            <div ref={this.myProjectToFocus}>
+              <hr className="my-5" />
+              <h2 className="my-5 h3 text-center">Projects</h2>
+              <Project />
+            </div>
           </div>
         </main>
-        <footer className="page-footer text-center font-small mt-4 wow fadeIn" id="contact">
-            <hr className="my-4" />
-            <h2 className="my-5 h3 text-center w3-text-white" >Contact Me</h2>
-          <Contact profile={this.state.profile} loading={this.state.loading} />
+        <footer className="page-footer text-center font-small mt-4 wow fadeIn" id="contact" ref={this.myContactToFocus}>
+          <hr className="my-4" />
+          <h2 className="my-5 h3 text-center w3-text-white" >Contact Me</h2>
+          <Contact />
         </footer>
       </>
     );
