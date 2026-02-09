@@ -1,7 +1,7 @@
 .background-image {
   width: 100%;
   height: 100%;
-  background-image: url("/image/welcomeImage.jpg");
+  background-image: url('./assets/image/welcomeImage.jpg');
 }
 .padding-10 {
   padding-top: 10%;
@@ -92,7 +92,7 @@ body {
   height: 100px;
 }
 .expimg1 {
-  width: 350px;
+  width: 200px;
   height: 80px;
 }
 .expimg2 {
@@ -143,7 +143,7 @@ body {
     height: 100px;
   }
   .expimg1 {
-    width: 350px;
+    width: 200px;
     height: 80px;
   }
   .expimg2 {

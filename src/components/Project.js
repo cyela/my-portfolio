@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaClone } from 'react-icons/fa';
 import '../App.css';
+import resumeData from '../assets/resume/data.json';
 
 
 class Project extends React.Component {
@@ -9,18 +10,14 @@ class Project extends React.Component {
         loading: false
     }
 
+    
     componentDidMount() {
-        this.setState({ loading: true });
-        fetch('./data.json')
-            .then(data => data.json())
-            .then(data =>
-                this.setState(
-                    {
-                        project: data[3].projects,
-                        loading: false
-                    })
-            );
+        this.setState({
+        project: resumeData[3].projects,
+        loading: false
+        });
     }
+
     render() {
         return (
             <>

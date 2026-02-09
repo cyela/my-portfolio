@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import { FaGraduationCap, FaCode, FaPrint, FaHome, FaPaperPlane, FaLaptopCode, FaTasks, FaInbox } from 'react-icons/fa';
+import resumeData from '../assets/resume/data.json';
 
 class Menu extends React.Component {
     state = {
@@ -9,16 +10,10 @@ class Menu extends React.Component {
     }
 
     componentDidMount() {
-        this.setState({ loading: true });
-        fetch('./data.json')
-            .then(data => data.json())
-            .then(data =>
-                this.setState(
-                    {
-                        profile: data[0],
-                        loading: false
-                    })
-            );
+        this.setState({
+        profile: resumeData[0],
+        loading: false
+        });
     }
 
     scrollTo = (e) => {

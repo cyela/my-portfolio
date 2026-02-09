@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
-import { FaMapMarker, FaPhone, FaEnvelope, FaPaperPlane, FaLinkedin, FaGithub, FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaMapMarker, FaPhone, FaEnvelope, FaPaperPlane, FaLinkedin, FaGithub } from 'react-icons/fa';
+import resumeData from '../assets/resume/data.json';
 
 class Contact extends React.Component {
 
@@ -10,16 +11,10 @@ class Contact extends React.Component {
     }
 
     componentDidMount() {
-        this.setState({ loading: true });
-        fetch('./data.json')
-            .then(data => data.json())
-            .then(data =>
-                this.setState(
-                    {
-                        profile: data[0],
-                        loading: false
-                    })
-            );
+        this.setState({
+        profile: resumeData[0],
+        loading: false
+        });
     }
 
 
@@ -48,12 +43,6 @@ class Contact extends React.Component {
                                                         </a>
                                                         <a href={this.state.profile.github} target={"_blank"} rel="noopener noreferrer">
                                                             <FaGithub className="w3-text-white mr-3" style={{ fontSize: "2em" }} />
-                                                        </a>
-                                                        <a href={this.state.profile.facebook} target={"_blank"} rel="noopener noreferrer">
-                                                            <FaFacebook className="w3-text-white mr-3" style={{ fontSize: "2em" }} />
-                                                        </a>
-                                                        <a href={this.state.profile.instagram} target={"_blank"} rel="noopener noreferrer">
-                                                            <FaInstagram className="w3-text-white mr-3" style={{ fontSize: "2em" }} />
                                                         </a>
                                                     </address>
                                                 </td>

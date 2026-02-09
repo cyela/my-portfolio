@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import resumeData from '../assets/resume/data.json';
 
 
 class Employement extends React.Component {
@@ -10,16 +11,10 @@ class Employement extends React.Component {
     }
 
     componentDidMount() {
-        this.setState({ loading: true });
-        fetch('./data.json')
-            .then(data => data.json())
-            .then(data =>
-                this.setState(
-                    {
-                        employement: data[2].employement,
-                        loading: false
-                    })
-            );
+        this.setState({
+        employement: resumeData[2].employement,
+        loading: false
+        });
     }
 
     render() {
@@ -38,7 +33,7 @@ class Employement extends React.Component {
                                                     <tr><td>&nbsp;</td></tr>
                                                     <tr>
                                                         <td align="left" className="jobname">
-                                                            <img src={emp.image} className="expimg1" alt={emp.companyName} />
+                                                            <img src={require(`../assets/image/${emp.image}`)} className="expimg1" alt={emp.companyName} />
                                                         </td>
                                                         <td align="right" className="jobname" >
                                                             <h4 className="exptitle">{emp.position}</h4>

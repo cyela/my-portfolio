@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import resumeData from '../assets/resume/data.json';
 
 
 class Academic extends React.Component {
@@ -10,16 +11,10 @@ class Academic extends React.Component {
     }
 
     componentDidMount() {
-        this.setState({ loading: true });
-        fetch('./data.json')
-            .then(data => data.json())
-            .then(data =>
-                this.setState(
-                    {
-                        education: data[1].education,
-                        loading: false
-                    })
-            );
+        this.setState({
+        education: resumeData[1].education,
+        loading: false
+        });
     }
 
     render() {

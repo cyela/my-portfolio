@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import resumeData from '../assets/resume/data.json';
 
 
 class Profile extends React.Component {
@@ -10,16 +11,10 @@ class Profile extends React.Component {
     }
 
     componentDidMount() {
-        this.setState({ loading: true });
-        fetch('./data.json')
-            .then(data => data.json())
-            .then(data =>
-                this.setState(
-                    {
-                        profile: data[0],
-                        loading: false
-                    })
-            );
+        this.setState({
+        profile: resumeData[0],
+        loading: false
+        });
     }
 
     scrollTo = (e) => {
@@ -43,7 +38,8 @@ class Profile extends React.Component {
                                                     <span>
                                                         <h1 className="display-4 top-heading tablet-h1 ">{this.state.profile.fullName}</h1>
                                                         <h2 className=" top-heading tablet-h2" style={{ paddingTop: "2%" }}>{this.state.profile.role}</h2>
-                                                        <h2 className=" top-heading tablet-h2" style={{ paddingTop: "2%" }}>{this.state.profile.bio}</h2>
+                                                        <h2 className=" top-heading tablet-h2" style={{ paddingTop: "2%" }}>{this.state.profile.bio1}</h2>
+                                                        <h2 className=" top-heading tablet-h2" style={{ paddingTop: "2%" }}>{this.state.profile.bio2}</h2>
                                                     </span>
                                                     <div className="btn btn-outline-white" id="Academic" onClick={this.scrollTo} style={{ marginTop: "2%", marginBottom: "2%", cursor:"pointer" }}>Know More </div>
                                                 </div>

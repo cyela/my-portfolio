@@ -1,0 +1,217 @@
+[
+    {
+        "fullName": "Chandrakanth Yela",
+        "bio1": "Senior Software Engineer with 8+ years of experience in full-stack development and enterprise-grade Java microservices. Skilled in designing scalable, high-performance backend systems using Java, Spring Boot, and Hibernate, and delivering intuitive, responsive frontends with React and JavaScript ",
+        "bio2": "Experienced in microservices architecture, distributed systems, and security-critical enterprise applications. Passionate about owning features end-to-end, writing clean, efficient code, and collaborating with cross-functional teams to solve complex technical challenges and deliver measurable business value.",
+        "role": "Full Stack Java Developer",
+        "url": "https://drive.google.com/open?id=1lH6yOmYD-59sPIOx61nprulAoBcVDt1H",
+        "phone": "7047771069",
+        "address": "Plano, TX",
+        "gmail": "yelachandrakanth@gmail.com",
+        "linkedIn": "https://www.linkedin.com/in/chandrakanthy",
+        "github": "https://github.com/cyela"
+    },
+    {
+        "education": [
+            {
+                "id": "2",
+                "degreeType": "Master of Science",
+                "instituteName": "University of North Carolina at Charlotte",
+                "concentration": "Computer Science",
+                "graduatedYear": "2017-2018",
+                "location": "Charlotte, US",
+                "grade": "3.5",
+                "image": "/image/uncclogo.jpg"
+            },
+            {
+                "id": "1",
+                "degreeType": "Bachelor of Technology",
+                "instituteName": "Mahatma Gandhi of Technology",
+                "concentration": "Electronics & Communication Engineering",
+                "graduatedYear": "2011-2015",
+                "location": "Hyderabad, India",
+                "grade": "3.8",
+                "image": "/image/mgit.png"
+            }
+        ]
+    },
+    {
+        "employement": [
+            {
+                "id": "4",
+                "companyName": "Shivam Infotech Inc",
+                "position": "Software Developer",
+                "location": "Miami, FL",
+                "duration": "Jan 2019 - Mar 2021",
+                "roles": [
+                    "Experience working in Agile development following the Scrum process, Sprint and weekly standup meetings",
+                    "Actively involved in the analysis of project requirements specified by the client",
+                    "Supported production deployment efficiently and troubleshoot issues in the production environment",
+                    "Designed and developed various application features using Spring, Tapestry 4.0 frameworks and also used tacos library for providing Ajax behavior for tapestry components",
+                    "Designed and developed interactive user interface screens using HTML5, tapestry, and CSS3",
+                    "Performed client-side operations and validations using Javascript, Ajax and jQuery",
+                    "Configured and implemented Amazon Web Services such as SNS, SES and Ring Central API’s for notifications",
+                    "Improved user security by implementing multi-factor authentication and time based generated passcodes",
+                    "Developed DAOs using JPA, Hibernate Criteria API and also written complex HQL  and SQL queries",
+                    "Used Log4j for logging and handling issues of the application during the development process",
+                    "Configured and worked on the Application Servers such as Wildfly 10 ",
+                    "Worked with ANT build and used Hudson continuous integration tool for automated deployment",
+                    "Performed Unit testing by implementing Junit test cases for ensuring code coverage",
+                    "Worked in using web-based version control tool SVN for tracking code changes and code merge"
+                ],
+                "image": "shivaminfotech.jpg"
+            },
+            {
+                "id": "3",
+                "companyName": "Digi Safari LLC",
+                "position": "Software Developer",
+                "location": "Atlanta, US",
+                "duration": "Aug 2018 - Dec 2018",
+                "roles": [
+                    "Developed Web application for Educational training website using Angular 6, Spring boot, Hibernate, SQL and AWS",
+                    "Developed and Supported Applications using various web technologies like HTML5, CSS3, Bootstrap, JavaScript, Spring, Hibernate, Node JS, Angular 6 and React JS",
+                    "Developed and Supported in the implementation of RESTful Services using Spring boot, Hibernate5 with JPA & SQL",
+                    "Developed Reusable Angular Components using Typescript, NPM, HTML5, and Bootstrap",
+                    "Developed and supported in building Angular Services integrating with REST API’s",
+                    "Worked on handling and maintaining application security, user sessions, logging and validations of data",
+                    "Supported the trainees by making them understand different web stacks like Spring, Angular 6, React JS, Node JS ",
+                    "Worked in building test cases for performing unit testing using the TestNG framework",
+                    "Used GIT for source control version management tool",
+                    "Experienced in working extensively in continuous integration and delivery using Jenkins",
+                    "Solved coding and application level issues by debugging the code written by the trainees"
+                ],
+                "image": "digi.png"
+            },
+            {
+                "id": "2",
+                "companyName": "Informative Technologies",
+                "position": "Back-end Developer",
+                "location": "Charlotte, US",
+                "duration": "Jan 2018 - July 2018",
+                "roles": [
+                    "Developed RESTful services for a Social Media Mobile Application to consume and handle all necessary user back-end operations",
+                    "Designed and developed REST API’s using Spring boot, Hibernate with JPA, MySQL",
+                    "Handled user sessions using JWT Token and used log4j for logging all the user activity in the log file ",
+                    "Performed unit testing using JUnit and tested API’s using Postman tool before integrating them",
+                    "Worked with different AWS services like EC2, SNS, SQS",
+                    "Used EC2 service for deploying the back end application",
+                    "Used RDS service for the handling MySQL database instance and ",
+                    "Used S3 storage service for storing high-quality images uploads made by end users",
+                    "Utilized GIT as a repository to manage application code and tracking all code changes by the  development team"
+                ],
+                "image": "informative.jpg"
+            },
+            {
+                "id": "1",
+                "companyName": "Tata Consultancy Services",
+                "position": "Java Developer",
+                "location": "Hyderabad, India",
+                "duration": "Jan 2016 - Dec 2016",
+                "roles": [
+                    "Developed various transaction modules for a Banking Web Application which involves both Front-end UI development and back-end operations",
+                    "Developed User interfaces using JSP, Spring forms, JSTL, Bootstrap, HTML5 and used JavaScript, jQuery for performing Client-side operations and validations",
+                    "Handled all incoming user requests by developing Spring controllers using Spring MVC and implemented DAO, Service layers for backend interactions using Spring JDBC",
+                    "Developed Stored Procedures, complex SQL statements for effective retrieval and storage of data into Oracle database version 10g",
+                    "Developed test cases and performed unit testing using JUnit, Mockito framework and configured Log4j for logging and handling defects in the application",
+                    "Worked with an Agile development team and performed a test-driven development approach ",
+                    "GIT for Source control and Version managing of all codes and resources"
+                ],
+                "image": "tcs.png"
+            }
+        ]
+    },
+    {
+        "projects": [
+            {
+                "id": "1",
+                "title": "Spring-Web",
+                "description": "Repository contains Web application built using Spring Framework",
+                "tech": "Maven, Java, Java Script, CSS, Bootstrap,Hibernate 5,JPA, Spring WebMVC, Eclipse, Apache Tomcat, MySQL",
+                "url": "https://github.com/cyela/Spring-Web-App",
+                "image": "/image/springlogo.jpg"
+            },
+            {
+                "id": "2",
+                "title": "Web Services",
+                "description": "Repository contains application that can provide Web Services for any E-Commerce Applications",
+                "tech": "Spring Boot, Hibernate5 with JPA, MySQL",
+                "url": "https://github.com/cyela/Springboot-Web-Services",
+                "image": "/image/springlogo.jpg"
+            },
+            {
+                "id": "3",
+                "title": "Angular & Webservices",
+                "description": "Repository contains Web application built using Angular 6 integrated with RESTFull Web services built using Spring",
+                "tech": "Angular 6, Typescript, CSS, Bootstrap",
+                "url": "https://github.com/cyela/Angular-Springboot",
+                "image": "/image/angular.png"
+            },
+            {
+                "id": "4",
+                "title": "Android",
+                "description": "Repository contains Native Android applications, developed during my course",
+                "tech": "Java, Android Studio, Firebase, SQLite",
+                "url": "https://github.com/cyela/AndroidProjects",
+                "image": "/image/giphy.gif"
+            },
+            {
+                "id": "5",
+                "title": "Resume Builder",
+                "description": "Repository contains RESTful service application",
+                "tech": " Java, iText, Spring boot, Postman",
+                "url": "https://github.com/cyela/Resume-Builder",
+                "image": "/image/resume.jpg"
+            },
+            {
+                "id": "6",
+                "title": "Java-Web Application",
+                "description": "Repository contains Web application developed during my course",
+                "tech": "Java, Java Script, CSS, Bootstrap, Eclipse, Apache Tomcat, MySQL",
+                "url": "https://github.com/cyela/Servlet-Web-App",
+                "image": "/image/giphyweb.gif"
+            }
+        ]
+    },
+    {
+        "skills": {
+                "Web Developement": [
+                    "Java",
+                    "Python",
+                    "JavaScript",
+                    "HTML5",
+                    "CSS3",
+                    "JSP",
+                    "Bootstrap",
+                    "jQuery",
+                    "Ajax",
+                    "PHP",
+                    "R",
+                    "D3"
+                ],
+                "Frameworks": [
+                    "Spring",
+                    "SpringBoot",
+                    "Hibernate",
+                    "NodeJS",
+                    "Angular",
+                    "React",
+                    "Tapestry"
+                ],
+                "Database": [
+                    "MySQL",
+                    "PL SQL",
+                    "Firebase",
+                    "Realm"
+                ],
+                "Softwares": [
+                    "Eclipse",
+                    "Android Studio",
+                    "SQL Developer",
+                    "Visual Studio Code",
+                    "Postman",
+                    "Jupyter",
+                    "Tableau"
+                ]
+            }
+    }
+]
