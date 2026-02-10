@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.538ad26a.css",
-    "main.js": "/my-portfolio/static/js/main.ed61ba77.js",
+    "main.js": "/my-portfolio/static/js/main.0741d397.js",
     "static/media/giphy.gif": "/my-portfolio/static/media/giphy.b3e74d8a4b84f44dfba8.gif",
     "static/media/gradpic.jpg": "/my-portfolio/static/media/gradpic.30623e0667f04b417676.jpg",
     "static/media/agilelogo.png": "/my-portfolio/static/media/agilelogo.63530a9df29452396c47.png",
@@ -53,10 +53,10 @@
     "static/media/Firebase.jpg": "/my-portfolio/static/media/Firebase.a4156cb67d6d0676cffc.jpg",
     "index.html": "/my-portfolio/index.html",
     "main.538ad26a.css.map": "/my-portfolio/static/css/main.538ad26a.css.map",
-    "main.ed61ba77.js.map": "/my-portfolio/static/js/main.ed61ba77.js.map"
+    "main.0741d397.js.map": "/my-portfolio/static/js/main.0741d397.js.map"
   },
   "entrypoints": [
     "static/css/main.538ad26a.css",
-    "static/js/main.ed61ba77.js"
+    "static/js/main.0741d397.js"
   ]
 }
