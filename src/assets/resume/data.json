@@ -4,7 +4,6 @@
         "bio1": "Senior Software Engineer with 8+ years of experience in full-stack development and enterprise-grade Java microservices. Skilled in designing scalable, high-performance backend systems using Java, Spring Boot, and Hibernate, and delivering intuitive, responsive frontends with React and JavaScript ",
         "bio2": "Experienced in microservices architecture, distributed systems, and security-critical enterprise applications. Passionate about owning features end-to-end, writing clean, efficient code, and collaborating with cross-functional teams to solve complex technical challenges and deliver measurable business value.",
         "role": "Full Stack Java Developer",
-        "url": "https://drive.google.com/open?id=1lH6yOmYD-59sPIOx61nprulAoBcVDt1H",
         "phone": "7047771069",
         "address": "Plano, TX",
         "gmail": "yelachandrakanth@gmail.com",
@@ -37,6 +36,26 @@
     },
     {
         "employement": [
+            {
+                "id": "5",
+                "companyName": "Securonix Inc",
+                "position": "Senior Software Engineer",
+                "location": "Plano, TX",
+                "duration": "Apr 2021 - Present",
+                "roles": [
+                    "Developed and enhanced backend modules using Java, Spring Boot, Solr, HBase, HDFS, and MySQL, supporting large-scale security analytics platforms.",
+                    "Modernized legacy applications by migrating core modules to a microservices architecture using Java 17 and reactive programming.",
+                    "Designed and implemented REST APIs to support third-party integrations and internal services.",
+                    "Improved system resiliency and fault tolerance by implementing retry mechanisms and performance optimizations",
+                    "Monitored and analyzed application performance using Datadog and AWS CloudWatch.",
+                    "Implemented security controls including RBAC, SQL injection prevention, XSS, CSRF, and session protection.",
+                    "Built UI components using React, GSP, JavaScript, HTML, CSS, and Bootstrap",
+                    "Wrote unit tests using JUnit and Mockito, increasing code reliability and maintainability",
+                    "Recognized with an R&D Choice Award for designing and delivering a high-impact POC",
+                    "Collaborated with QA, support, and product teams in Agile Scrum environments"
+                ],
+                "image": "securonix.jpg"
+            },
             {
                 "id": "4",
                 "companyName": "Shivam Infotech Inc",
@@ -85,7 +104,7 @@
             {
                 "id": "2",
                 "companyName": "Informative Technologies",
-                "position": "Back-end Developer",
+                "position": "Backend Developer",
                 "location": "Charlotte, US",
                 "duration": "Jan 2018 - July 2018",
                 "roles": [

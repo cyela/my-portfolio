@@ -28,8 +28,8 @@ class Project extends React.Component {
                                 {this.state.project.map(
                                     (proj, i) => {
                                         return (
-                                            <div key={i} className="col-lg-4 col-md-6 col-sm-12">
-                                                <div className="card card-image mb-3" style={{ backgroundImage: `url(${proj.image})`, backgroundSize: "cover" }}>
+                                            <div key={i} className="col-lg-4 col-md-6 col-sm-12 d-flex">
+                                                <div className="card card-image mb-3 w-100" style={{ backgroundImage: `url(${proj.image})`, backgroundSize: "cover", backgroundPosition: "center" }}>
                                                     <div className="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
                                                         <div className="tablet-card transbox" >
                                                             <h4 className="card-title pt-2" ><strong><span >{proj.title}</span></strong></h4>

@@ -36,8 +36,8 @@ class Employement extends React.Component {
                                                             <img src={require(`../assets/image/${emp.image}`)} className="expimg1" alt={emp.companyName} />
                                                         </td>
                                                         <td align="right" className="jobname" >
-                                                            <h4 className="exptitle">{emp.position}</h4>
-                                                            <h5 style={{ fontStyle: "italic" }} className="exploc">{emp.location}</h5>
+                                                            <h5 className="exptitle">{emp.position}</h5>
+                                                            <h6 style={{ fontStyle: "italic" }} className="exploc">{emp.location}</h6>
                                                             <p style={{ fontStyle: "italic" }} className="exptime">{emp.duration}</p>
                                                         </td>
                                                     </tr>

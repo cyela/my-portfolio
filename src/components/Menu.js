@@ -2,6 +2,7 @@ import React from 'react';
 import '../App.css';
 import { FaGraduationCap, FaCode, FaPrint, FaHome, FaPaperPlane, FaLaptopCode, FaTasks, FaInbox } from 'react-icons/fa';
 import resumeData from '../assets/resume/data.json';
+import resumePdf from "../assets/resume/resume_chandrakanth.pdf";
 
 class Menu extends React.Component {
     state = {
@@ -41,7 +42,7 @@ class Menu extends React.Component {
                             </ul>
                             <ul className="navbar-nav nav-flex-icons">
                                 <li className="nav-item"><a className="nav-link" href="mailto:yelachandrakanth@gmail.com" ><FaInbox /> Mail</a></li>
-                                <li className="nav-item"><a className="nav-link" href={this.state.profile.url} target={"_blank"} rel="noopener noreferrer"><FaPrint /> Resume</a></li>
+                                <li className="nav-item"><a className="nav-link" href={resumePdf} target={"_blank"} rel="noopener noreferrer"><FaPrint /> Resume</a></li>
                             </ul>
                         </div>
                     </div>
