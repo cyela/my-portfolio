@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.dac5c50b.css",
-    "main.js": "/my-portfolio/static/js/main.0e4fa7c5.js",
+    "main.css": "/my-portfolio/static/css/main.538ad26a.css",
+    "main.js": "/my-portfolio/static/js/main.ed61ba77.js",
     "static/media/giphy.gif": "/my-portfolio/static/media/giphy.b3e74d8a4b84f44dfba8.gif",
     "static/media/gradpic.jpg": "/my-portfolio/static/media/gradpic.30623e0667f04b417676.jpg",
     "static/media/agilelogo.png": "/my-portfolio/static/media/agilelogo.63530a9df29452396c47.png",
@@ -12,6 +12,7 @@
     "static/media/obcs.jpg": "/my-portfolio/static/media/obcs.89ffb9b592e3d5116990.jpg",
     "static/media/Eclipse.jpg": "/my-portfolio/static/media/Eclipse.2ad62ba9c60942fa8227.jpg",
     "static/media/SQL Developer.jpg": "/my-portfolio/static/media/SQL Developer.6aea7dc5185b402d6f2d.jpg",
+    "static/media/resume_chandrakanth.pdf": "/my-portfolio/static/media/resume_chandrakanth.f77bc48edf001c077e4e.pdf",
     "static/media/hyper.png": "/my-portfolio/static/media/hyper.8acba3b8761d3f157eca.png",
     "static/media/tableau.png": "/my-portfolio/static/media/tableau.641f890312bbff869694.png",
     "static/media/Android Studio.jpg": "/my-portfolio/static/media/Android Studio.adee1f2302a6cff1d0ef.jpg",
@@ -51,11 +52,11 @@
     "static/media/sql.png": "/my-portfolio/static/media/sql.17ec01314179e9a8ab58.png",
     "static/media/Firebase.jpg": "/my-portfolio/static/media/Firebase.a4156cb67d6d0676cffc.jpg",
     "index.html": "/my-portfolio/index.html",
-    "main.dac5c50b.css.map": "/my-portfolio/static/css/main.dac5c50b.css.map",
-    "main.0e4fa7c5.js.map": "/my-portfolio/static/js/main.0e4fa7c5.js.map"
+    "main.538ad26a.css.map": "/my-portfolio/static/css/main.538ad26a.css.map",
+    "main.ed61ba77.js.map": "/my-portfolio/static/js/main.ed61ba77.js.map"
   },
   "entrypoints": [
-    "static/css/main.dac5c50b.css",
-    "static/js/main.0e4fa7c5.js"
+    "static/css/main.538ad26a.css",
+    "static/js/main.ed61ba77.js"
   ]
 }
